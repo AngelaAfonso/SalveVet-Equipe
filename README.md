@@ -13,6 +13,8 @@ Desenvolver uma plataforma com área logada para conectar médicos veterinários
 -Perfis para veterinários e clientes.
 -Sistema de validação de documentos (CPF, CRV).
 -Histórico de atendimentos e avaliações.
+-integração com clinicas e hospitais
+-Dashboards
 
 Conexão entre Veterinários e Clientes
 -Sistema de busca e filtro por localização, especialização, disponibilidade.
