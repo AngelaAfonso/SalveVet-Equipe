@@ -1,0 +1,173 @@
+/* Estilizando o contêiner da barra de pesquisa para centralizar na tela com espaçamento superior */
+.search-bar {
+  background-color: #1D7263;
+  width: 80vw;
+  height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  padding: 2vw;
+  border-radius: 10px; /* Adicionando bordas arredondadas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /* Espaço entre elementos */
+  margin: 20px auto; /* Centralizar horizontalmente e adicionar espaçamento superior */
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total */
+  position: relative; 
+  margin-top: -7vw;
+}
+
+/* Estilizando o título */
+.titlee {
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2%;
+  font-size: 2.4vw;
+  word-wrap: break-word; /* Ajusta o texto para quebrar quando necessário */
+}
+
+/* Estilizando o contêiner de inputs */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0.5vw; /* Ajuste conforme necessário */
+}
+
+/* Ajuste dos botões de pesquisa */
+.search-button {
+  background-color: #E2FBF9;
+  border: none;
+  border-radius: 10px; /* Adicionando bordas arredondadas */
+  padding: 1vw 2vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  font-size: 1vw;
+  white-space: nowrap; /* Previne quebras de linha no texto */
+  transition: all 0.3s ease; /* Adiciona uma transição suave para as mudanças */
+  margin-left: 2%;
+}
+
+.search-button img {
+  transition: filter 0.3s ease; /* Transição suave para a cor do ícone */
+}
+
+.search-button:hover {
+  border: 0.96px solid #1EE0CC; /* Atualiza a cor da borda para o hover */
+  background-color: #1EE0CC; /* Altera a cor de fundo para o hover */
+  color: #fff;
+}
+
+.search-button:hover img {
+  filter: brightness(0) invert(1); /* Muda a cor do ícone para branco */
+}
+
+/* Estilizando o contêiner de botões */
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 1vw; /* Ajuste conforme necessário */
+  align-self: flex-start; /* Alinha à esquerda */
+  margin-left: 16%;
+}
+
+/* Estilizando os botões de opção */
+.option-button {
+  background-color: transparent;
+  border: 1px solid #1EE0CC;
+  color: #fff;
+  border-radius: 40px; /* Adicionando bordas arredondadas */
+  padding: 1vw 2vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  font-size: 1vw;
+  white-space: nowrap; /* Previne quebras de linha no texto */
+  margin-top: 2%;
+}
+
+.option-button1{
+    background-color: #B40000;
+    color: #fff;
+    border-radius: 8px; /* Adicionando bordas arredondadas */
+    padding: 1vw 2vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1vw;
+    white-space: nowrap; /* Previne quebras de linha no texto */
+    margin-top: 2%;
+}
+
+.option-button:hover {
+  border: 0.96px solid #1EE0CC; /* Atualiza a cor da borda para o hover */
+  background-color: #1EE0CC; /* Altera a cor de fundo para o hover */
+}
+
+/* Estilizando as imagens dentro dos botões */
+.svgImage1 {
+  width: 1.4vw;
+}
+
+/* Estilizando o dropdown customizado */
+.custom-select {
+  position: relative;
+  width: 25vw; /* Ajuste conforme necessário */
+}
+
+.custom-select1 {
+  position: relative;
+  width: 15vw; /* Ajuste conforme necessário */
+}
+
+.selected-option {
+  background: #E2FBF9;
+  border: none;
+  border-radius: 15px;
+  padding: 1vw 2vw;
+  font-size: 1.3vw;
+  color: #000;
+  cursor: pointer;
+  background: #E2FBF9 url('data:image/svg+xml;utf8,<svg fill="%23000" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+  background-position: calc(100% - 10px) center; /* Ajusta a posição da seta */
+  margin-right: 3%;
+  white-space: nowrap; /* Previne quebra de linha no texto do dropdown */
+  overflow: hidden; /* Esconde qualquer conteúdo que transborde */
+  text-overflow: ellipsis; /* Adiciona "..." ao final do texto que transbordar */
+}
+
+.options {
+  display: none; /* Oculta as opções inicialmente */
+  position: absolute;
+  width: 100%;
+  background: #E2FBF9;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin-top: 2vw;
+  z-index: 10; /* Para garantir que o dropdown apareça acima dos outros elementos */
+}
+
+.custom-select .options, .custom-select1 .options {
+  display: block; /* Mostra o dropdown quando o estado está aberto */
+}
+
+.option {
+  padding: 1vw 3vw;
+  font-size: 1vw;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.option:hover {
+  background: #d0f0ee;
+}
+
+.option-icon {
+  margin-right: 1vw;
+  width: 1.4vw;
+}
