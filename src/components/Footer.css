@@ -1,0 +1,48 @@
+:root{
+    --color5: #E2FBF9;
+}
+
+.Footer{
+    background-color: var(--color5);
+    padding: 2vw;
+    display: flex;
+    justify-content: left;
+    gap: 10vw;
+    align-items: center;
+}
+.address-section img{
+    width: 15vw;
+}
+.address-section{
+    text-align: left;
+    font-size: 1.4vw;
+}
+.articles-section ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.1vw;
+}
+.articles-section ul{
+    gap: 1vw;
+    padding: 0vw 4vw;
+}
+.articles-section ul li:hover{
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transform: translateY(-7px);
+}
+.social-media-section{
+    display: flex;
+    gap: 4vw;
+}
+.social-media-section img{
+    width: 3vw;
+}
+.social-media-section img:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}

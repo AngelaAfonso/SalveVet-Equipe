@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    width: 90vw;
+    padding: 1vw 1vw 0vw 1vw;
+    background-color: #F4F1E9;
+    border-radius: 15px;
+    margin: 50px 0px;
+    box-shadow: 0px 8px 10px 1px rgba(0,0,0,0.2);
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: 0%;
+
+}
+
+.header li {
+    font-size: 1.1vw;
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+
+.header li a {
+    text-decoration: none !important;
+    color: #333333;
+}
+
+.header img {
+    height: 40px;
+}
+
+.header button {
+    background-color: #5C2574;
+    color: #F4F1E9;
+    padding: 0.7vw;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.header img{
+    width: 10vw;
+}
+
+@media screen and (max-width: 900px){
+    .header{
+        width: 80vw;
+    }
+    .header li{
+        font-size: 1.4vw;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header{
+        margin: 3vw 0vw;
+        height: 8vw;
+    }
+    .header li{
+        font-size: 1.4vw;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header{
+        margin: 3vw 0vw;
+        padding-top: 0vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header{
+        margin: 3vw 0vw;
+        padding-top: 0vw;
+        height: 10vw;
+    }
+}
